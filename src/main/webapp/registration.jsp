@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -85,14 +83,15 @@
 	<!-- JS -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="js/main.js"></script>
-	
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="alert/dist/sweetalert.css">
 	
 	
 <script type="text/javascript">
 
 	var status = document.getElementById("status").value;
 	if(status == "success"){
-		swal("Congrats" , "Account Created Successfully" , "success");
+		swal("Congrats","registration" , "successfull");
 	}
 
 var images = ["images/India1.jpeg", "images/India2.jpeg", "images/India3.jpeg"];
@@ -123,7 +122,7 @@ var status = document.getElementById("status").value;
 console.log(status);
 if(status == "success"){
 	
-	SweetAlert("congrats","Account created successfully " , "success");
+	swal("congrats","Account created successfully " , "success");
 	
 }
 

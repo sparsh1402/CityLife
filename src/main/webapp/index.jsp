@@ -1,3 +1,8 @@
+<% 
+	if(session.getAttribute("name") == null){
+		response.sendRedirect("login.jsp");
+	}
+%>
 <!DOCTYPE html>
 <html lang="en-US">
    <head>
@@ -17,10 +22,10 @@
       <script type="text/javascript" src="js/responsee.js"></script>
       <script type="text/javascript" src="js/template-scripts.js"></script> 
                  
-      <!--[if lt IE 9]>
+    <!--   <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-      <![endif]-->
+      <![endif]--> -->
       <style type="text/css">          
 <!--
 .style2 {color: #85C2C2}
