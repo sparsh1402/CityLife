@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-
+<input type = "hidden" id = "status" value = " <%= request.getAttribute("status") %>">
 	<div class="main">
 
 		<!-- Sing in  Form -->
@@ -76,8 +76,16 @@
 	<!-- JS -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="alert/dist/sweetalert.css">
+	
 	<script type="text/javascript">
 
+	var status = document.getElementById("status").value;
+	if(status == "failed"){
+		console.log(status);
+		swal("Sorry","wrong Username or Password" , "failed");
+	}
 var images = ["images/India1.jpeg", "images/India2.jpeg", "images/India3.jpeg"];
 
 // Shuffle the images using the Fisher-Yates algorithm

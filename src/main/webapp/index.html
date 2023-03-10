@@ -1,9 +1,4 @@
 
-<% 
-	if(session.getAttribute("name") == null){
-		response.sendRedirect("index.html");
-	}
-%>
 <!DOCTYPE html>
 <html lang="en-US">
    <head>
@@ -61,8 +56,7 @@
                      <li><a href="start.jsp">Information</a></li>
                      <li><a href="#our-work">Gallery</a></li>
                      <li><a href="start.jsp">Services</a></li>
-                     <li><a href="logout">Logout</a></li>
-                     <li><a href="logout"><%= session.getAttribute("name") %></a></li>
+                     <li><a href="registration.jsp">Sign up/Login</a></li>
                      <li><a href="AdminLogin.jsp">Admin panel</a></li>
                   </ul>
                </div>
